@@ -5,10 +5,13 @@
     <title>Title</title>
 
     <style>
-        body>div{
-            border: 2px solid orange;
-            width: 1000px;
-            height: 500px;
+        body{
+            margin: 0;
+        }
+
+        body>section{
+            width: 100vw;
+            height: 100vh;
             display: grid;
             /*grid-template-columns: 1fr 1fr 1fr 1fr;  !*fr-fractional*!*/
             grid-template-columns: repeat(4, 1fr);
@@ -16,23 +19,23 @@
 
         }
 
-        body>div>div:nth-child(1){
+        body>section>div:nth-child(1){
             grid-column: 1/3;
         }
 
-        body>div>div:nth-child(4){
+        body>section>div:nth-child(4){
             grid-column: 4/5;
             grid-row: 1/4;
         }
 
-        body>div>div:nth-child(8){
+        body>section>div:nth-child(8){
             grid-column: 2/4;
         }
 
     </style>
 </head>
 <body>
-<div>
+<section>
     <div style="background-color: orangered"></div>
     <div style="background-color: gray"></div>
     <div style="background-color: green"></div>
@@ -50,6 +53,6 @@
 
 
 
-</div>
+</section>
 </body>
 </html>
