@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position 04</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{
+            width: 100vw;
+            height: 60px;
+            position: sticky;
+            left: 0;
+            top: 0;
+            z-index: 99;
+        }
+        h3{
+            position: relative;
+            color: white;
+            top: 15px;
+            left: 20px;
+            font-family: 'Figtree', sans-serif;
+            margin: 0;
+            width: fit-content;
+        }
+        h1{
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 60px;
+
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section:nth-child(1)>header{
+            background-color: red;
+        }
+        section:nth-child(2)>header{
+            background-color: cornflowerblue;
+        }
+        section:nth-child(3)>header{
+            background-color: grey;
+        }
+        section:nth-child(4)>header{
+            background-color: crimson;
+        }
+    </style>
+
+</head>
+<body>
+<section>
+    <header>
+        <h3>
+           Card 1
+        </h3>
+    </header>
+    <h1>Hello</h1>
+</section>
+<section style="background-color: lightskyblue">
+    <header>
+        <h3>
+            Card 2
+        </h3>
+    </header>
+    <h1>How</h1>
+</section>
+<section style="background-color: darkgrey">
+    <header>
+        <h3>
+            Card 3
+        </h3>
+    </header>
+    <h1>Are</h1>
+</section>
+<section style="background-color: red">
+    <header>
+        <h3>
+            Card 4
+        </h3>
+    </header>
+    <h1>You..?</h1>
+</section>
+</body>
+</html>
